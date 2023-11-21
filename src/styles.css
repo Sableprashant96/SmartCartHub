@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: sans-serif;
+  }
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .common-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+  }
+  .form-input {
+    height: 35px;
+    margin-bottom: 20px;
+    border: 1px solid ;
+    padding-left: 15px;
+    color: #41A3B3;
+    border-radius: 5px;
+  }
+  .form-button {
+    height: 35px;
+    border: 1px solid #41A3B3;
+    color: #41A3B3;
+    cursor: pointer;
+  }
+  .error-p{
+    color: red;
+  }
+  
+  .message-p{
+    color: green;
+    text-align: center;
+  }
+  
+  .carousel-caption {
+    background-color: #0000007d;
+    border-radius: 10px;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 5px;
+  }
+  
+  .invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top:-20px
+  }
+  button:disabled{
+    cursor: not-allowed;
+  }
+  .max-width{
+    width: 100%;
+  }
+  
+  a {
+    text-decoration: none; 
+    color: inherit;
+  }
+  
+@import '~bootstrap/dist/css/bootstrap.css';
+/* @import '~@fortawesome/fontawesome-free/css/all.css' */

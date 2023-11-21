@@ -1,0 +1,35 @@
+table{
+    text-align: left;
+    /* color: #41A3B3; */
+    border-collapse: collapse;
+
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+table td , table th{
+    border: 1px solid #41A3B3;
+    padding: 10px;
+    min-width: 160pxs;
+    
+}
+.adjust-update-link{
+    margin-left: 10px;
+}
+
+h2{
+    color: #41A3B3;
+}
+
+.product-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.message-p{
+    color: red;
+}
+fa-icon {
+    cursor: pointer;
+}

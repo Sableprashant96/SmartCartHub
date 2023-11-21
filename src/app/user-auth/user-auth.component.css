@@ -1,0 +1,35 @@
+.user-auth h2{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #41A3B3;  
+    text-align: center; 
+}
+h2{
+    margin-top: 50px;
+
+    color: #41A3B3;  
+    text-align: center; 
+}
+.user-auth {
+    margin-bottom: 100px;
+}
+.user-auth a{
+    color: #41A3B3;
+    cursor: pointer;
+}
+
+
+.auth-toggle-link{
+    color: #41A3B3;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+ a {
+    text-decoration: none;
+ }
+ a:hover {
+    color: #66e0f8;
+}

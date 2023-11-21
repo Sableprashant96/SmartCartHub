@@ -1,0 +1,200 @@
+{
+  "seller": [
+    {
+      "name": "sam sidhu",
+      "email": "sam@seller.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "peter",
+      "password": "abc@123",
+      "email": "peter@test.com",
+      "id": 3
+    },
+    {
+      "name": "bruce",
+      "password": "abc@123",
+      "email": "bruce@test.com",
+      "id": 4
+    },
+    {
+      "name": "anil",
+      "password": "abc123",
+      "email": "anil@test.com",
+      "id": 5
+    },
+    {
+      "name": "alena",
+      "password": "abc123",
+      "email": "alena@test.com",
+      "id": 6
+    },
+    {
+      "name": "sam",
+      "password": "abc@123",
+      "email": "sam@test.com",
+      "id": 7
+    },
+    {
+      "name": "bhasker",
+      "password": "abc@123",
+      "email": "bhasker@test.com",
+      "id": 8
+    },
+    {
+      "name": "Prashant Sable",
+      "password": "123",
+      "email": "sableprashant96@gmail.com",
+      "id": 9
+    },
+    {
+      "name": "qwe",
+      "password": "123",
+      "email": "student-03-2af7208ea0dc@qwiklabs.net",
+      "id": 10
+    },
+    {
+      "name": "zxc",
+      "password": "123",
+      "email": "zxc@",
+      "id": 11
+    },
+    {
+      "name": "11",
+      "password": "11",
+      "email": "11",
+      "id": 12
+    },
+    {
+      "name": "1Q",
+      "password": "123",
+      "email": "1Q",
+      "id": 13
+    },
+    {
+      "name": "qw",
+      "password": "q2",
+      "email": "qw",
+      "id": 14
+    }
+  ],
+  "products": [
+    {
+      "name": "I phone 14",
+      "price": "99999",
+      "category": "mobile",
+      "color": "Red",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 1
+    },
+    {
+      "name": "I phone 14",
+      "price": "99999",
+      "category": "mobile",
+      "color": "Red",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 2
+    },
+    {
+      "name": "Asus Laptop",
+      "price": "59000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "Asus laptop for student and professionals",
+      "image": "https://m.media-amazon.com/images/I/71COoJZfsDL.jpg",
+      "id": 3
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "3000",
+      "category": "Shoes",
+      "color": "Black",
+      "description": "Best shoes for Running",
+      "image": "https://img.tatacliq.com/images/i9/437Wx649H/MP000000016000042_437Wx649H_202301080159211.jpeg",
+      "id": 4
+    },
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://img3.junaroad.com/uiproducts/18870127/pri_175_p-1671024275.jpg",
+      "id": 5
+    },
+    {
+      "name": "Toy",
+      "price": "200",
+      "category": "Toys",
+      "color": "Red",
+      "description": "A toy for 5 year old child",
+      "image": "https://www.stockvault.net/data/2009/04/26/108750/preview16.jpg",
+      "id": 6
+    },
+    {
+      "name": "Noise Smart Watch",
+      "price": "2999",
+      "category": "Watch",
+      "color": "Black",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "name": "anil",
+      "email": "anil@user.com",
+      "password": "abc123",
+      "id": 1
+    },
+    {
+      "name": "peter",
+      "email": "peter@user.com",
+      "password": "abc123",
+      "id": 2
+    },
+    {
+      "name": "hyden",
+      "email": "hyden@user.com",
+      "password": "abc123",
+      "id": 3
+    },
+    {
+      "name": "tony",
+      "email": "tony@user.com",
+      "password": "abc123",
+      "id": 4
+    },
+    {
+      "name": "Prashant Sable",
+      "email": "sableprashant96@gmail.com",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "Prashant Sable",
+      "email": "student-03-2af7208ea0dc@qwiklabs.net",
+      "password": "123",
+      "id": 6
+    }
+  ],
+  "cart": [
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "quantity": 1,
+      "productId": 5,
+      "userId": 3,
+      "id": 8
+    }
+  ],
+  "orders": []
+}
