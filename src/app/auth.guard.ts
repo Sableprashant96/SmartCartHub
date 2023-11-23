@@ -7,7 +7,11 @@ import { SellerService } from './services/seller/seller.service';
   providedIn: 'root'
 })
 export class AuthGuard implements CanActivate {
+
+
   constructor(private sellerService:SellerService){}
+
+  //gurd for seller login 
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {

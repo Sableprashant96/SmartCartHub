@@ -8,16 +8,23 @@ import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./seller-home.component.css'],
 })
 export class SellerHomeComponent implements OnInit {
-  productList: undefined | product[];
-  productMessage: undefined | string;
-  icon = faTrash;
-  iconEdit=faEdit;
+
+
+  productList: undefined | product[]; //products list array
+  productMessage: undefined | string; //msg property
+  icon = faTrash; //delete icon
+  iconEdit=faEdit; //update icon
+
+
   constructor(private product: ProductService) {}
+
 
   ngOnInit(): void {
     this.list();
   }
 
+
+//delete the product from list
   deleteProduct(id: number) {
     this.product.deleteProduct(id).subscribe((result) => {
       if (result) {
@@ -31,6 +38,7 @@ export class SellerHomeComponent implements OnInit {
     }, 3000);
   }
 
+  //retrives the list of products
   list() {
     this.product.productList().subscribe((result) => {
       if (result) {

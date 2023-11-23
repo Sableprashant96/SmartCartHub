@@ -7,30 +7,40 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class SellerService {
-  isSellerLoggedIn= new BehaviorSubject<boolean>(false);
-  isLoginError= new EventEmitter<boolean>(false)
+
+
+  isSellerLoggedIn= new BehaviorSubject<boolean>(false); //observale to check status for Auth guard
+  isLoginError= new EventEmitter<boolean>(false)   //event for invalid user detection
+
 
   constructor(private http:HttpClient, private router:Router) { }
+
+
+  // API to user signup
   userSignUp(data:signUp){
     this.http.post('http://localhost:3000/seller',
-    data,
-    {observe:'response'}).subscribe((result)=>{
-      console.warn(result)
+    data,{observe:'response'}).subscribe((result)=>{
       if(result){
-        // localStorage.setItem('seller',JSON.stringify(result.body))
-        // this.router.navigate(['seller-home'])
+
+        localStorage.setItem('seller',JSON.stringify(result.body));
+        this.router.navigate(['seller-home']);
       }
     })
   } 
+
+// checks local if login details is stored
   reloadSeller(){
     if(localStorage.getItem('seller')){
-      this.isSellerLoggedIn.next(true)
+      this.isSellerLoggedIn.next(true) //emit logged in
       this.router.navigate(['seller-home'])
     }
   }
+
+
+  
   userLogin(data:logIn){
    this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
-   {observe:'response'}).subscribe((result:any)=>{
+   {observe:'response'}).subscribe(( result:any )=>{
     console.warn(result)
     if(result && result.body && result.body.length===1){
       this.isLoginError.emit(false)

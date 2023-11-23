@@ -7,21 +7,28 @@ import { ProductService } from '../services/product/product.service';
   templateUrl: './seller-add-product.component.html',
   styleUrls: ['./seller-add-product.component.css'],
 })
+
 export class SellerAddProductComponent implements OnInit {
-  addProductMessage: string | undefined;
+
+  addProductMessage: string | undefined; //msg
+
+
   constructor(private product: ProductService) {}
+
 
   ngOnInit(): void {}
 
+
+// add new product data 
   submit(data: product) {
     this.product.addProduct(data).subscribe((result) => {
-      console.warn(result);
+      // console.warn(result);
       if (result) {
         this.addProductMessage = 'Product is added successfully';
       }
     });
 
-    setTimeout(() => {
+    setTimeout(() => { //timer for msg
       this.addProductMessage=undefined
     }, 3000);
   }

@@ -56,7 +56,7 @@ this.showLogin=true;
       setTimeout(() => {
         this.product.addToCart(cartData).subscribe((result)=>{
           if(result){
-            console.warn("data is stored in DB");
+            // console.warn("data is stored in DB");
           }
         })
       }, 500);

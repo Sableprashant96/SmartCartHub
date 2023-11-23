@@ -3,6 +3,7 @@
     margin: 25px auto;
     border-top: 1px solid #ddd;
     padding-top: 15px;
+
 }
 .search-item img{
     width: 100%;
@@ -17,3 +18,11 @@
     margin-bottom: 5px;
 }
 .search-item span{margin-right: 10px;}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.search{
+    min-height: 77vh;
+}

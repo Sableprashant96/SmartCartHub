@@ -3,6 +3,7 @@
     margin-bottom: 40px;
     color: #41A3B3;  
     text-align: center; 
+
 }
 h2{
     margin-top: 50px;
@@ -11,7 +12,8 @@ h2{
     text-align: center; 
 }
 .user-auth {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+    height: 75vh;
 }
 .user-auth a{
     color: #41A3B3;

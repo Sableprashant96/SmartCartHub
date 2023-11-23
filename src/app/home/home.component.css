@@ -7,6 +7,7 @@
     margin-bottom: 40px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    
 }
 
 .product-item img{
@@ -30,7 +31,7 @@
 }
 .product-item .product-footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     padding: 10px;
 }
 

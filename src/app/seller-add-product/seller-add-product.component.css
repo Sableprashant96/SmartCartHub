@@ -4,6 +4,7 @@ h2{
 }
 .add-product{
     text-align: center;
+    height: 80vh;
 
 }
 textarea, input {

@@ -10,11 +10,18 @@ import { ProductService } from '../services/product/product.service';
 export class MyOrdersComponent implements OnInit {
 
   orderData:order[]|undefined
+
+
   constructor(private product:ProductService) { }
+
+
 
   ngOnInit(): void {
     this.getOrderList()
   }
+
+
+//cancel order based on order Id
   cancelOrder(orderId:number|undefined){
     orderId && this.product.cancelOrder(orderId).subscribe((result)=>{
       if(result){
@@ -22,6 +29,9 @@ export class MyOrdersComponent implements OnInit {
       }
     })
   }
+
+
+  //list of ordered product
   getOrderList(){
     this.product.orderList().subscribe((result)=>{
       this.orderData=result;

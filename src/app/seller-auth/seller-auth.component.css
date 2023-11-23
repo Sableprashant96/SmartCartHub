@@ -27,3 +27,7 @@ a{
 a:hover{
     color: #66e0f8;
 }
+
+.seller-auth{
+    height: 75vh;
+}

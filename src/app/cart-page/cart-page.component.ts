@@ -9,45 +9,52 @@ import { ProductService } from '../services/product/product.service';
   styleUrls: ['./cart-page.component.css']
 })
 export class CartPageComponent implements OnInit {
-  cartData: cart[] | undefined;
-  priceSummary: priceSummary = {
+  cartData: cart[] | undefined; 
+  //price summary object
+  priceSummary: priceSummary = {  
     price: 0,
     discount: 0,
     tax: 0,
     delivery: 0,
     total: 0
   }
+
+
   constructor(private product: ProductService, private router: Router) { }
+
 
   ngOnInit(): void {
    this.loadDetails()
-
   }
 
-  removeToCart(cartId:number|undefined){
-    cartId && this.cartData && this.product.removeToCart(cartId)
+  
+  //api calling to remove added products in cart
+  removeFromCart(cartId:number|undefined){
+    cartId && this.cartData && this.product.removeFromCart(cartId)
     .subscribe((result)=>{
       this.loadDetails();
     })
   }
 
+
+ //retrive current cart details
   loadDetails(){
-    this.product.currentCart().subscribe((result) => {
+    this.product.currentCart().subscribe((result) => {  //api call
       this.cartData = result;
-      console.warn(this.cartData);
+      // console.warn(this.cartData);
       let price = 0;
-      result.forEach((item) => {
+      result.forEach((item) => {          //calculate final price
         if (item.quantity) {
           price = price + (+item.price * +item.quantity)
         }
       })
-      this.priceSummary.price = price;
+      this.priceSummary.price = price;                   //final price summary
       this.priceSummary.discount = price / 10;
       this.priceSummary.tax = price / 10;
       this.priceSummary.delivery = 100;
-      this.priceSummary.total = price + (price / 10) + 100 - (price / 10);
+      this.priceSummary.total = price + (price / 10) + 100 - (price / 10); 
 
-    if(!this.cartData.length){
+    if(!this.cartData.length){  //nav to home if no cart data available
       this.router.navigate(['/'])
     }
 
@@ -56,7 +63,7 @@ export class CartPageComponent implements OnInit {
 
 
 
-
+   // nav to checkout page
   checkout() {
     this.router.navigate(['/checkout'])
   }

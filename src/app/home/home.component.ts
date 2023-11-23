@@ -8,45 +8,24 @@ import { ProductService } from '../services/product/product.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  // productData:undefined | product;
-  // productQuantity:number=1;
- popularProducts: undefined | product[];
- trendyProducts: undefined | product[];
+
+ popularProducts: undefined | product[]; //popular products array
+ trendyProducts: undefined | product[];  //popular products array
+
+
   constructor(private product:ProductService) {}
 
+
+
   ngOnInit(): void {
-    this.product.popularProducts().subscribe((data)=>{
+    this.product.popularProducts().subscribe((data)=>{ //GET popular products
       this.popularProducts=data;
     })
 
-    this.product.trendyProducts().subscribe((data)=>{
+    this.product.trendyProducts().subscribe((data)=>{ //GET trending products
       this.trendyProducts=data;
     })
   }
 
-  // addToCart(){
-  //   if(this.productData){
-  //     this.productData.quantity = this.productQuantity;
-  //     if(!localStorage.getItem('user')){
-  //       this.product.localAddToCart(this.productData);
-  //       this.removeCart=true
-  //     }else{
-  //       let user = localStorage.getItem('user');
-  //       let userId= user && JSON.parse(user).id;
-  //       let cartData:cart={
-  //         ...this.productData,
-  //         productId:this.productData.id,
-  //         userId
-  //       }
-  //       delete cartData.id;
-  //       this.product.addToCart(cartData).subscribe((result)=>{
-  //         if(result){
-  //          this.product.getCartList(userId);
-  //          this.removeCart=true
-  //         }
-  //       })        
-  //     }
-      
-  //   } 
-  // }
+
 }

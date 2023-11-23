@@ -6,7 +6,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    position:static;
+    /* position:fixed; */
     background-color: #fff;
     align-items: center;
     background-color: rgba(50, 161, 179, 0.226);
